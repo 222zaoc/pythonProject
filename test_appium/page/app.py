@@ -1,3 +1,5 @@
+import os
+
 from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -19,7 +21,10 @@ class App(BasePage):
             caps["activity"] = self._activity
             caps["autoGrantPemissions"] = True
             caps["noReset"] = True
+            # udid = os.getenv('udid')
+            # caps["udid"] = udid
             # caps["chromedriverExecutable"] = ""
+            # self._driver = webdriver.Remote("http://localhost:4444/wd/hub", caps)
             self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
             self._driver.implicitly_wait(3)
         else:
