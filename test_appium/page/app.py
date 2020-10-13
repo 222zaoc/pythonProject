@@ -16,7 +16,7 @@ class App(BasePage):
         if self._driver is None:
             caps = {}
             caps["platforName"] = "android"
-            caps["deviceName"] = "cc78667g"
+            caps["deviceName"] = "6160a6b0"
             caps["appPackage"] = self._package
             caps["activity"] = self._activity
             caps["autoGrantPemissions"] = True

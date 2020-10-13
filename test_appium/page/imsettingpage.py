@@ -1,5 +1,5 @@
 from test_appium.page.basepage import BasePage
-from test_appium.page.searchpage import SearchPage
+# from test_appium.page.searchpage import SearchPage
 
 
 class ImSettingPage(BasePage):
@@ -8,4 +8,5 @@ class ImSettingPage(BasePage):
         return ImPage(self._driver)
 
     def goto_search(self):
+        from test_appium.page.searchpage import SearchPage
         return SearchPage(self._driver)
