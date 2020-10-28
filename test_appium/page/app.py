@@ -15,10 +15,10 @@ class App(BasePage):
 
         if self._driver is None:
             caps = {}
-            caps["platforName"] = "android"
+            caps["platformName"] = "android"
             caps["deviceName"] = "6160a6b0"
             caps["appPackage"] = self._package
-            caps["activity"] = self._activity
+            caps["appActivity"] = self._activity
             caps["autoGrantPemissions"] = True
             caps["noReset"] = True
             # udid = os.getenv('udid')
